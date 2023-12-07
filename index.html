@@ -6,9 +6,12 @@
     <title>panda|portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/styles/import.css'>
+    <link rel="stylesheet" type="text/css" href="/font-awesome-4.7.0/css/font-awesome.css">
     <script src='main.js'></script>
 </head>
 <body>
+
+    <!-- header section:containg the logo and heder -->
     <header>
         <div class="container">
             <div id="logo">
@@ -28,6 +31,7 @@
             </nav>
         </div>
     </header>
+    <!-- main section: containg introdution and picture -->
     <main>
         <section  id="mySummary">
             <div class="container">
@@ -40,27 +44,80 @@
                 </div>
             </div>
         </section>
+        <!-- main article:containg skill,services,video & booking form -->
         <article id="skills">
-            <div><h1 style="text-align: center;"> My Skills</h1></div>
             <div class="container" >
-                <div class="box" ><p >html5 proficiency</p></div>
-                <div class="box"><p>mastery of css3 styling for creating visually captivating websites</p></div>
-                <div class="box"><p>javascript, for reponsive & functional websites</p></div>
-            </div>
-            <div class="container">
-                <div class="box" style="display: inline;">blue</div>
-                <div class="box" style="display: inline;">blue</div>
-                <div class="box" style="display: inline;">blue</div>
+                <div class="box first" >
+                    <h1>My Skills</h1>
+                    <ul>
+                        <li>html5 proficiency</li>
+                        <li>mastery of css3 styling for creating visually captivating websites</li>
+                        <li>javascript, for reponsive & functional websites</li>
+                    </ul>
+                </div>
+                <div class="box second" >
+                    <h1>My Services</h1>
+                    <ul>
+                        <li>html5 proficiency</li>
+                        <li>mastery of css3 styling for creating visually captivating websites</li>
+                        <li>javascript, for reponsive & functional websites</li>
+                    </ul>
+                </div>
+                <div class="box third">
+                    <form action="">
+                        <div class="container">
+                            <h1>
+                                Book A Session Now!!!
+                            </h1>
+                            <p> Book a session today and let me help you bring your ideas to reality.</p>
+                            <div class="customer">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" placeholder="John Doe"><br>
+                                <label for="email">Email:</label>
+                                <input type="text" id="name" placeholder="JohnDoe@gmail.com">
+                            </div>
+                            <div class="project">
+                                <textarea name="project" id="project" cols="30" rows="10" placeholder="whats your project about?"></textarea><br>
+                                <button class="btn1" type="reset">Book Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="video">
+                    <video src="/images/panda.mp4" controls></video>
+                </div>
             </div>
         </article>
     </main>
-    <aside>
-        <form action="">
-            <div class="container"></div>
-        </form>
-    </aside>
+    <!-- footer section:containg logo,contact & -->
     <footer>
+        <div class="container">
+            <div id="logo">
+                <img src="/images/google-panda-circular-symbol-svgrepo-com.svg" alt="">
+                <h1>
+                    <span>panda</span>-code
+                </h1>
+            </div>
+            <!-- contact logo and link -->
+            <div class="mycontact">
+                <h1>Contact Us</h1>
 
+                <a href="https://github.com/panda-codes"><i class="fa fa-github fa-3x" aria-hidden="true" style="color: black;" ></i></a>
+                <a href="dedeomatse@gmail.com"><i class="fa fa-google fa-3x" aria-hidden="true" style="color: black; "></i></a>
+                <i class="fa fa-linkedin-square fa-3x" aria-hidden="true" style="color: black;"></i>
+                <i class="fa fa-facebook fa-3x" aria-hidden="true" style="color: black;"></i>
+                <p>&copy; Copyright. All rights reserved.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">work</a></li>
+                    <li><a href="">resume</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 </body>
 </html>

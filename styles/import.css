@@ -7,6 +7,11 @@
 body {
   background-color: black;
   color: #fff;
+  line-height: 1.5;
+  font-size: 15px;
+}
+body h1 {
+  font-weight: 900;
 }
 
 .container {
@@ -20,14 +25,14 @@ body {
 }
 
 header {
-  background-color: purple;
+  background-color: rgb(94, 2, 94);
   height: 60px;
 }
 header #logo img {
   width: 50px;
   padding-right: 5px;
   position: relative;
-  top: 5px;
+  top: 6px;
 }
 header #logo {
   display: flex;
@@ -55,6 +60,144 @@ header a:hover {
   text-decoration: underline;
 }
 
+main section {
+  background-color: #262626;
+  margin: 20px;
+  border-radius: 20px;
+}
+main section .container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.text p {
+  width: 80%;
+}
+
 #pic img {
-  width: 60%;
+  width: 70%;
+}
+
+article {
+  margin-bottom: 10px;
+}
+article .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  align-self: center;
+}
+article .video {
+  grid-column: 1/span 2;
+  grid-row: 2;
+}
+article .video video {
+  width: 100%;
+  height: 190px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+article .box {
+  background-color: rgb(94, 2, 94);
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+article .box ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+article .second {
+  background-color: #fff;
+  color: black;
+}
+article .third {
+  background-color: #262626;
+  height: 390px;
+  width: 90%;
+  grid-column: 3;
+  grid-row: 1/span 2;
+}
+article .third .container {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+article .third form {
+  text-align: center;
+}
+article .third form h1 {
+  text-decoration: underline;
+}
+article .third form input {
+  width: 200px;
+  height: 23px;
+  border-radius: 5px;
+}
+article .third button {
+  background-color: rgb(17, 180, 17);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 23px;
+  font-weight: 900;
+}
+article .third button:hover {
+  background-color: #085708;
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(94, 2, 94);
+  height: 200px;
+}
+footer .container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+footer #logo img {
+  width: 50px;
+  padding-right: 5px;
+  position: relative;
+  top: 6px;
+}
+footer #logo {
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+}
+footer #logo span {
+  color: black;
+}
+footer #logo h1 {
+  font-style: italic;
+}
+footer i a:hover {
+  color: #fff;
+}
+footer li {
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  padding-left: 8px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  color: black;
+  text-decoration: underline;
 }/*# sourceMappingURL=import.css.map */

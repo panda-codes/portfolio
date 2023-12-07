@@ -7,6 +7,12 @@
 body{
     background-color: $secondaryColor;
     color: $textColor;
+    line-height: 1.5;
+    font-size: 15px;
+
+    h1{
+        font-weight: 900;
+    }
 }
 
 .container{
@@ -16,6 +22,7 @@ body{
     @include flex(row,center,space-between);
 }
 
+// header
 header{
     background-color: $primaryColor;
     height: 60px;
@@ -24,7 +31,7 @@ header{
         width: 50px;
         padding-right: 5px;
         position: relative;
-        top: 5px;
+        top: 6px;
     }
     #logo{
       display: flex;
@@ -55,11 +62,177 @@ header{
     }
 }
 
+// main section
+main section{
+    background-color: lighten($color: $secondaryColor, $amount: 15%);
+    margin: 20px;
+    border-radius: 20px;
+    // color: black;
+
+    .container{
+        width: 1440px;
+        margin: 0 auto;
+        padding: 0 30px;
+        @include flex(row,center,center);
+    }
+}
+
+.text p{
+    width: 80%;
+}
 
 #pic img{
-    width: 60%;
-    // height: 300px;
-    // border: 1px solid $primaryColor;
-    // border: 1px solid $textColor;
-    // border-radius: 50%;
+    width: 70%;
+}
+
+// main article area
+article{
+    margin-bottom: 10px;
+    .container{
+        @include grid();
+    }
+   
+    .video{
+        grid-column: 1/span 2;
+        grid-row: 2;
+
+// article video
+        video{
+            width: 100%;
+            height: 190px;
+            // height: 99%;
+            // position: relative;
+            // left: 17px;
+            // background-size: contain;
+            border-radius: 20px;
+            border: 2px solid $textColor;
+            // bottom: 0px;
+            // margin: 10px 20px;
+        }
+    }
+
+// article box settings
+.box{
+    background-color: $primaryColor;
+    // text-wrap:wrap;
+    // text-align: center;
+    // width: 400px;
+    // height: 200px;
+    padding: 20px 30px;
+    border-radius: 20px;
+    // margin: 10px 20px;
+
+  ul{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+
+
+  
+}
+// article second box
+ .second{
+        background-color: #fff;
+        color: black;
+
+       
+    }
+
+    // article third box
+    .third{
+        background-color: lighten($color: $secondaryColor, $amount: 15%);
+        height: 390px;
+        width: 90%;
+        grid-column: 3;
+        grid-row: 1/span 2;
+
+        .container{
+            padding: 0;
+            width: 100%;
+            @include flex(column,center,center);
+        }
+        
+// article form 
+        form{
+            text-align: center;
+            h1{
+                text-decoration: underline;
+            }
+
+            input{
+                width: 200px;
+                height: 23px;
+                border-radius: 5px;
+            }
+        }
+
+// form button
+
+        button{
+            background-color: $btnColor;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 23px;
+            font-weight: 900;
+            @include btn();
+        }
+    }
+}
+
+// footer area
+footer{
+    background-color: $primaryColor;
+    height: 200px;
+
+    .container{
+        @include flex(row,start,space-between);
+        // @include grid();
+    }
+
+    #logo img{
+        width: 50px;
+        padding-right: 5px;
+        position: relative;
+        top: 6px;
+    }
+    #logo{
+      display: flex;
+      align-items: start;
+      justify-content: space-evenly;
+
+      span{
+        color: black;
+      }
+
+      h1{
+        font-style: italic;
+      }
+    }
+
+    i{ 
+        a{
+            &:hover{
+                color: #fff;
+            }
+        }
+        
+    }
+
+    
+    li{
+        display: block;
+        font-size: 20px;
+        font-weight: 900;
+        padding-left: 8px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $textColor;
+        @include btn1();
+    }
 }
