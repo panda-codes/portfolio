@@ -186,7 +186,7 @@ article{
 // footer area
 footer{
     background-color: $primaryColor;
-    height: 200px;
+    height: 150px;
 
     .container{
         @include flex(row,start,space-between);
