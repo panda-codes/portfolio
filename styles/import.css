@@ -159,45 +159,17 @@ article .third button:hover {
 
 footer {
   background-color: rgb(94, 2, 94);
-  height: 150px;
+  height: 70px;
 }
 footer .container {
   display: flex;
   flex-direction: row;
-  align-items: start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
-footer #logo img {
-  width: 50px;
-  padding-right: 5px;
+footer .mycontact i {
+  margin-top: 5px;
+  margin-bottom: 5px;
   position: relative;
-  top: 6px;
-}
-footer #logo {
-  display: flex;
-  align-items: start;
-  justify-content: space-evenly;
-}
-footer #logo span {
-  color: black;
-}
-footer #logo h1 {
-  font-style: italic;
-}
-footer i a:hover {
-  color: #fff;
-}
-footer li {
-  display: block;
-  font-size: 20px;
-  font-weight: 900;
-  padding-left: 8px;
-}
-footer a {
-  text-decoration: none;
-  color: #fff;
-}
-footer a:hover {
-  color: black;
-  text-decoration: underline;
+  left: 37px;
 }/*# sourceMappingURL=import.css.map */

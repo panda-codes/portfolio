@@ -186,53 +186,61 @@ article{
 // footer area
 footer{
     background-color: $primaryColor;
-    height: 150px;
+    height: 70px;
 
     .container{
-        @include flex(row,start,space-between);
+        @include flex(row,center,center);
         // @include grid();
     }
 
-    #logo img{
-        width: 50px;
-        padding-right: 5px;
-        position: relative;
-        top: 6px;
-    }
-    #logo{
-      display: flex;
-      align-items: start;
-      justify-content: space-evenly;
+    // #logo img{
+    //     width: 50px;
+    //     padding-right: 5px;
+    //     position: relative;
+    //     top: 6px;
+    // }
+    // #logo{
+    //   display: flex;
+    //   align-items: start;
+    //   justify-content: space-evenly;
 
-      span{
-        color: black;
-      }
+    //   span{
+    //     color: black;
+    //   }
 
-      h1{
-        font-style: italic;
-      }
-    }
+    //   h1{
+    //     font-style: italic;
+    //   }
+    // }
 
-    i{ 
-        a{
-            &:hover{
-                color: #fff;
-            }
-        }
+    // i{ 
+    //     a{
+    //         &:hover{
+    //             color: #fff;
+    //         }
+    //     }
         
-    }
+    // }
 
+    .mycontact{
+        i{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            position: relative;
+            left: 37px;
+        }
+    }
     
-    li{
-        display: block;
-        font-size: 20px;
-        font-weight: 900;
-        padding-left: 8px;
-    }
+    // li{
+    //     display: block;
+    //     font-size: 20px;
+    //     font-weight: 900;
+    //     padding-left: 8px;
+    // }
 
-    a{
-        text-decoration: none;
-        color: $textColor;
-        @include btn1();
-    }
+    // a{
+    //     text-decoration: none;
+    //     color: $textColor;
+    //     @include btn1();
+    // }
 }
