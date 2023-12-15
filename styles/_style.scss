@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,900;1,400&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +11,7 @@ body{
     color: $textColor;
     line-height: 1.5;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
 
     h1{
         font-weight: 900;
@@ -26,6 +29,7 @@ body{
 header{
     background-color: $primaryColor;
     height: 60px;
+
 
     #logo img{
         width: 50px;
@@ -114,24 +118,15 @@ article{
 // article box settings
 .box{
     background-color: $primaryColor;
-    // text-wrap:wrap;
-    // text-align: center;
-    // width: 400px;
-    // height: 200px;
     padding: 20px 30px;
     border-radius: 20px;
-    // margin: 10px 20px;
 
   ul{
         padding: 0;
         margin: 0;
         width: 100%;
     }
-
-
-
-  
-}
+    }
 // article second box
  .second{
         background-color: #fff;
@@ -193,34 +188,6 @@ footer{
         // @include grid();
     }
 
-    // #logo img{
-    //     width: 50px;
-    //     padding-right: 5px;
-    //     position: relative;
-    //     top: 6px;
-    // }
-    // #logo{
-    //   display: flex;
-    //   align-items: start;
-    //   justify-content: space-evenly;
-
-    //   span{
-    //     color: black;
-    //   }
-
-    //   h1{
-    //     font-style: italic;
-    //   }
-    // }
-
-    // i{ 
-    //     a{
-    //         &:hover{
-    //             color: #fff;
-    //         }
-    //     }
-        
-    // }
 
     .mycontact{
         i{
@@ -231,16 +198,4 @@ footer{
         }
     }
     
-    // li{
-    //     display: block;
-    //     font-size: 20px;
-    //     font-weight: 900;
-    //     padding-left: 8px;
-    // }
-
-    // a{
-    //     text-decoration: none;
-    //     color: $textColor;
-    //     @include btn1();
-    // }
 }
